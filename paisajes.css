@@ -1,0 +1,115 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+section {
+    height: 100vh;
+}
+
+.section1 {
+   background-image: url(img/p1.jpg);
+   overflow: hidden; /*imagenes pegadas una a la otra, no hay espacios arriba y abajo*/
+   background-size: cover; /*no se repite*/
+   background-position: center;
+   background-attachment: fixed; /*se queda pegado osea fijo*/   
+}
+
+.section2 {
+    background-image: url(img/ninos.jpg);
+    overflow: hidden; 
+    background-size: cover; /*no se repite*/
+    background-position: center;
+    background-attachment: fixed; /*se queda pegado osea fijo*/   
+    height: auto; /*ocupa el alto de todos los textos*/
+ }
+
+ .section3 {
+    background-image: url(img/p4.jpg);
+    overflow: hidden;
+    background-size: cover; /*no se repite*/
+    background-position: center;
+    background-attachment: fixed; /*se queda pegado osea fijo*/   
+ }
+
+ .section4 {
+    background-image: url(img/mariposas.jpg);
+    overflow: hidden;
+    background-size: cover; /*no se repite*/
+    background-position: center;
+    background-attachment: fixed; /*se queda pegado osea fijo*/   
+ }
+
+ .section1 h1 {
+     background: rgba(0,0,0,0.5);
+     color: #fff;
+     font-family: 'Merienda', cursive;
+     text-align: center;
+     font-size: 2.5em;
+     opacity: 0.36;
+     margin-top: 150px;
+     padding: 10px;
+ }
+
+ .section1 h1:hover {
+    opacity: 0.86;
+    cursor: pointer;
+ }
+
+ .texto-columna {
+     text-align: center;
+     margin: 10px;
+     padding: 10px 20px;
+     background: rgba(255,255,255,0.8);
+     border-radius: 10px; 
+     width: 93%;    
+ }
+ .texto-columna:hover{
+    background: #12c2e9; 
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); 
+    box-shadow: 10px 10px 8px 2px rgba(24,26,24,1);    
+}
+
+ section .contenedor {
+    display: flex; /*acomoda los textos en fila*/
+    flex-wrap: wrap; /*acomoda los textos en columnas, dispositivos pequeños*/
+    justify-content: center;
+    margin: 15px;
+ }
+
+ .section3 h2 {
+    background: rgba(240, 231, 231, 0.2);
+    color: #fff;
+    font-family: 'Bad Script', cursive;
+    text-align: center;
+    font-size: 2.5em;
+    opacity: 0.36;
+    margin-top: 150px;
+    padding: 10px;
+}
+
+.section4 h3 {
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+    font-size: 2.5em;
+    opacity: 0.36;
+    margin-top: 150px;
+    padding: 10px;
+}
+
+@media(min-width:620px){
+    .texto-columna{
+        width: 40%;
+    }
+}
+
+ 
